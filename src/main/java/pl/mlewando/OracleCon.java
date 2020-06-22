@@ -7,7 +7,7 @@ class OracleCon{
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             Connection con=DriverManager.getConnection(
-                    "jdbc:oracle:thin:@localhost:1521:xe","milosz","milosz");
+                    "jdbc:oracle:thin:@0.0.0.0:1521:xe","asseco","asseco");
 
             Statement stmt=con.createStatement();
 
