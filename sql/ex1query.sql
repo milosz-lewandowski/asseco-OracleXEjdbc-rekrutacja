@@ -11,5 +11,6 @@ SELECT employees.last_name FROM departments
                                     join job_history ON job_history.department_id = departments.department_id
                                     join employees ON employees.department_id = departments.department_id
 where departments.department_name = 'DRK'
-GROUP By employees.last_name --chyba że pomijamy grupowanie po nazwisku w przypadku innych emp.id.
+  AND JOB_HISTORY.START_DATE <= CURRENT_DATE
+GROUP By employees.last_name
 ORDER BY employees.last_name ASC;

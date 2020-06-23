@@ -22,5 +22,12 @@
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
       <jdbc-url>jdbc:oracle:thin:@0.0.0.0:1521:XE</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="HRschemaXE" uuid="236fff29-860a-4da3-a383-5fa82bcebcd9">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@0.0.0.0:1521:XE</jdbc-url>
+    </data-source>
   </component>
 </project>
