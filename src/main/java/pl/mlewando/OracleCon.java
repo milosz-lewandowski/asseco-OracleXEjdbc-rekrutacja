@@ -7,13 +7,13 @@ class OracleCon{
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
             Connection con=DriverManager.getConnection(
-                    "jdbc:oracle:thin:@0.0.0.0:1521:xe","asseco","asseco");
+                    "jdbc:oracle:thin:@0.0.0.0:1521:xe","HR","asseco");
 
             Statement stmt=con.createStatement();
 
-            ResultSet rs=stmt.executeQuery("select * from TEST");
+            ResultSet rs=stmt.executeQuery("select * from COUNTRIES");
             while(rs.next())
-                System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));
+                System.out.println(rs.getString(1)+"  "+rs.getString(2)+"  "+rs.getInt(3));
 
             con.close();
 
